@@ -1,11 +1,11 @@
-function App() {
+import Parent from "./useMemo/Parent";
+
+const App = () => {
   return (
-    <>
-      <div>
-        <h2>APP</h2>
-      </div>
-    </>
+    <div>
+      <Parent />
+    </div>
   );
-}
+};
 
 export default App;
