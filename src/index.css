@@ -6,8 +6,6 @@
 body {
   font-family: sans-serif;
   background-color: teal;
-  display: flex;
-  justify-content: center;
 }
 
 a {
@@ -15,15 +13,20 @@ a {
   color: inherit;
 }
 
-button {
-  padding: 5px;
-  cursor: pointer;
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  background-color: gray;
 }
-input {
-  outline: none;
-  padding: 5px;
-  margin: 5px 0;
+ul {
+  display: flex;
+  gap: 2rem;
 }
-label {
-  display: block;
+li {
+  list-style: none;
+}
+.active {
+  color: #fff;
 }
