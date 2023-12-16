@@ -5,28 +5,21 @@
 }
 body {
   font-family: sans-serif;
-  background-color: teal;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin: 1rem 0;
 }
 
 a {
   text-decoration: none;
   color: inherit;
 }
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 60px;
-  background-color: gray;
-}
-ul {
-  display: flex;
-  gap: 2rem;
-}
-li {
-  list-style: none;
-}
-.active {
-  color: #fff;
+button {
+  outline: none;
+  border: none;
+  padding: 7px;
+  border-radius: 3px;
+  margin-top: 1rem;
+  cursor: pointer;
 }
