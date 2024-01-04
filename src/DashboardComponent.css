@@ -1,0 +1,219 @@
+/* DashboardComponent.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  background-color: black;
+  color: white;
+  /* text-align: center; */
+}
+
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+}
+
+.side-menu {
+  width: 15%;
+  color: #fff;
+  /* padding: 20px; */
+  box-sizing: border-box;
+  box-shadow: 2px 0 5px rgba(255, 255, 255, 0.7);
+}
+
+.logo {
+  width: 80%;
+  max-width: 150px;
+  /* margin-bottom: 5px; */
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+.logs {
+  margin-bottom: 1rem;
+}
+.menu li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  /* text-align: center; */
+  /* margin-left: 1rem; */
+}
+.home {
+  /* color: red; */
+  background-color: orange;
+  padding: 5px;
+  border-radius: 0 20px 20px 0;
+  width: 10rem;
+}
+.main-content {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.column-table {
+  margin-bottom: 20px;
+  background-color: #212121;
+  border-radius: 5px;
+}
+
+.column-table table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 5px;
+}
+
+.column-table th,
+.column-table td {
+  border: none;
+  border: none; /* Remove vertical borders between columns */
+  border-bottom: 0.4px solid #ddd; /* Add horizontal borders between rows */
+  padding: 8px;
+  text-align: center;
+}
+
+.box {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.horizontal-line {
+  border: 1px solid #ddd;
+  margin: 10px 0;
+}
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #212121;
+  border: none;
+}
+
+.icons-container {
+  display: flex;
+}
+
+.icon {
+  margin-left: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  border: 1px solid gray;
+  background-color: #212121;
+  border-radius: 5px;
+  padding: 4px;
+}
+
+/* DashboardComponent.css */
+.small {
+  margin: 1rem 0;
+}
+.color {
+  color: orange;
+}
+/* ... (previous styles) */
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.nested-box-last {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.box-btn {
+  background-color: orange;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.btn1 {
+  background-color: orange;
+  color: #fff;
+  padding: 8px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+.btn2 {
+  background-color: #212121;
+  color: #fff;
+  padding: 8px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+}
+
+.parallel-box {
+  background-color: #212121;
+  border: 1px solid gray;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 5px;
+}
+
+.centered-heading {
+  margin-bottom: 20px;
+}
+
+.box-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.nested-box {
+  /* flex: 1; */
+  background-color: #000;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  margin-right: 10px;
+}
+.box-inner {
+  display: flex;
+}
+.item1,
+.item2 {
+  display: flex;
+}
+
+/* ... (remaining styles) */
+
+@media (max-width: 800px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+
+  .side-menu {
+    width: 100%;
+  }
+  .menu {
+    display: none;
+  }
+  .horizontal-line {
+    display: none;
+  }
+}
